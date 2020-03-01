@@ -7,13 +7,13 @@ const Header = props => {
     <header>
       <h1 className="mainTitle">
         <Link href="/" as="/">
-          <a>Gluten Tag</a>
+          <a name="Retour à l'accueil">Gluten Tag</a>
         </Link>
       </h1>
 
       <ul>
         <li>
-            {(props.actual == "about") ? <Link href="/"><a>Blog</a></Link> : <Link href="/about"><a>About</a></Link>}
+            {(props.actual == "about") ? <Link href="/" name="Retour à l'accueil"><a>Blog</a></Link> : <Link href="/about" name="Visiter la page About"><a>About</a></Link>}
         </li>
       </ul>
     </header>

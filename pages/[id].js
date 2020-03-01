@@ -61,7 +61,7 @@ const Article = props => {
                     <h1>404</h1>
                     <p>Il semblerait que cette page n'existe pas !</p>
                     <Link href="/">
-                        <a>Retour à l'accueil</a>
+                        <a name="Retour à l'accueil">Retour à l'accueil</a>
                     </Link>
                 </div>
             <Footer />
@@ -72,7 +72,6 @@ const Article = props => {
 
 
 Article.getInitialProps = async function(context) {
-    //   const res = await fetch(`http://localhost:1337/articles?slug=${query.id}`);
     const { id } = context.query;
     const res = await fetch(`https://backend-blog-mathis.herokuapp.com/articles?slug=${id}`);
     const json = await res.json();
