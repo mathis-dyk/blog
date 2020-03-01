@@ -1,0 +1,61 @@
+@import '../config/config.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+body {
+    background: $black_bg;
+    color: $white;
+    font-weight: lighter;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-family: "Georgia";
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+.small_container {
+    width: 767px;
+    max-width: 80%;
+    margin: auto;
+}
+
+article {
+    pre {
+        background: rgba(255, 255, 255, 0.1);
+        padding: 10px;
+        border-radius: 5px;
+
+        code {
+            background: none;
+        }
+    }
+}
+
+.about {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+        width: 150px;
+        border-radius: 50%;
+        margin-bottom: 30px;
+    }
+
+    p {
+        font-size: 21px;
+
+        a {
+            text-decoration: none;
+            color: $red;
+        }
+    }
+}

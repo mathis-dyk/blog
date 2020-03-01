@@ -1,0 +1,51 @@
+@import '../../config/config.scss';
+
+.presentationBlock {
+    margin-bottom: 50px;
+
+    .profil {
+        display: flex;
+        text-transform: uppercase;
+
+        img {
+            border-radius: 50%;
+            width: 90px;
+            height: 90px;
+            opacity: .9;
+            margin-bottom: 50px;
+            margin-right: 50px;
+        }
+
+        h2 {
+            font-family: "fengardo black";
+            letter-spacing: 2px;
+        }
+
+        .socials {
+            margin-top: 20px;
+            display: flex;
+
+            svg {
+                width: 24px;
+                fill: $white;
+                margin-right: 12px;
+                transition: .1s all ease-out;
+
+                &:hover {
+                    fill: $red;
+                }
+            }
+        }
+    }
+
+    p {
+        font-size: 21px;
+    }
+
+    .fx-1 {
+        margin-top: 20px;
+        width: 120px;
+        height: 6px;
+        background: $red;
+    }
+}

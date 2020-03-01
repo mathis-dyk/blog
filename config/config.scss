@@ -1,0 +1,30 @@
+$black_bg: #121212;
+$red: #f50029cb;
+$white: #ffffffcb;
+
+$fullEmphasis: 0.87;
+$mediumEmphasis: 0.7;
+$lightEmphasis: .38;
+
+@font-face {
+    font-family: "fengardo";
+    src: url("/fonts/fengardo_neue/web/FengardoNeue_Regular.otf") format("otf");
+    src: url("/fonts/fengardo_neue/web/fengardoneue_regular-webfont.ttf") format("ttf"),
+         url("/fonts/fengardo_neue/web/fengardoneue_regular-webfont.woff") format("woff"),
+         url("/fonts/fengardo_neue/web/fengardoneue_regular-webfont.eot") format("eot"),
+         url("/fonts/fengardo_neue/web/fengardoneue_regular-webfont.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: "fengardo black";
+    src: url("/fonts/fengardo_neue/web/FengardoNeue_Black.otf") format("otf");
+    src: url("/fonts/fengardo_neue/web/fengardoneue_black-webfont.ttf") format("ttf"),
+         url("/fonts/fengardo_neue/web/fengardoneue_black-webfont.woff") format("woff"),
+         url("/fonts/fengardo_neue/web/fengardoneue_black-webfont.eot") format("eot"),
+         url("/fonts/fengardo_neue/web/fengardoneue_black-webfont.svg") format("svg");
+    font-weight: bold;
+    font-style: normal;
+}

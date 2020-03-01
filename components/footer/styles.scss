@@ -1,0 +1,26 @@
+@import '../../config/config.scss';
+
+footer {
+    height: 108px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    
+    a {
+        text-decoration: none;
+        color: $white;
+
+        position: relative;
+
+        &:before {
+            content: "";
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 100%;
+            transition: all 0.2s ease-out;
+            height: 2px;
+            background: $red;
+        }
+    }
+}

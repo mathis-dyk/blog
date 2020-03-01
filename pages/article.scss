@@ -1,0 +1,143 @@
+@import '../config/config.scss';
+
+.article {
+    .infos {
+        margin-bottom: 50px;
+    }
+
+    h1:not(.mainTitle) {
+        font-size: 36px;
+    }
+
+    .error {
+        h1 {
+            color: $red;
+            font-size: 90px;
+            margin-bottom: 50px;
+        }
+
+        p {
+            font-size: 30px;
+        }
+
+        a {
+            color: $white;
+            position: relative;
+            text-decoration: none;
+
+            &:before {
+                content: "";
+                background: $red;
+                width: 0%;
+                transform-origin: left;
+                height: 2px;
+                bottom: -2px;
+                left: 0;
+                transition: .2s all ease-out;
+                position: absolute;
+            }
+
+            &:hover:before {
+                width: 100%;
+            }
+        }
+    }
+}
+
+article {
+    font-size: 18px;
+    font-weight: 100;
+    line-height: 36px;
+
+    code, pre {
+        font-size: 14px;
+    }
+
+    p {
+        code {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        a {
+            color: $red;
+            text-decoration: none;
+
+            &[target="_blank"] {
+                color: $white;
+                position: relative;
+
+                &:before {
+                    content: "";
+                    position: absolute;
+                    bottom: -2px;
+                    left: 0;
+                    width: 100%;
+                    transition: all 0.2s ease-out;
+                    height: 2px;
+                    background: $red;
+                }
+            }
+        }
+    }
+
+    div.blockcode {
+        padding: 5px 10px;
+        border-radius: 5px;
+        background: rgba(255, 255, 255, 0.1);
+
+        .function {
+            color: rgb(91, 130, 230);
+        }
+
+        .string {
+            color: rgb(220, 131, 63);
+        }
+
+        .balise {
+            color: rgb(218, 45, 45);
+        }
+
+        .attribut {
+            color: rgb(152, 45, 218);
+        }
+    }
+
+    h2 {
+        font-size: 24px;
+        margin-top: 80px;
+    }
+
+    h3 {
+        font-size: 18px;
+        margin-top: 40px;
+        position: relative;
+        display: inline-block;
+        font-weight: 100;
+
+        &:before {
+            content: "";
+            position: absolute;
+            bottom: 0px;
+            left: 0;
+            width: 100%;
+            transition: all 0.2s ease-out;
+            height: 2px;
+            background: $red;
+        }
+    }
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: initial;
+        margin-left: 30px;
+        width: calc(100% - 30px);
+
+        li {
+            box-sizing: content-box;
+            width: 50%;
+        }
+    }
+}
