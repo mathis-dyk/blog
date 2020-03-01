@@ -10,7 +10,7 @@ const TitleArticle = ({
   return (
     <section className="titleArticle">
       <h3>
-        <Link href={slug}>
+        <Link href={`/[id]`} as={`/${slug}`}>
           <a dangerouslySetInnerHTML={{ __html: title }} />
         </Link>
       </h3>

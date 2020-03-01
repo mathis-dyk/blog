@@ -8,9 +8,11 @@ import Header from "../components/header";
 import Footer from "../components/footer";
 import { numberToMonth, numberToSemaine } from "../tools";
 import Link from 'next/link'
+import { useRouter } from 'next/router';
 
 const Article = props => {
-    console.log(props)
+    const router = useRouter();
+
     if (props.articles && props.articles[0]) {
         let article = props.articles[0]
         var conv = new showdown.Converter();
@@ -70,9 +72,9 @@ const Article = props => {
     }
 };
 
-Article.getInitialProps = async function({ query }) {
+Article.getInitialProps = async function(router) {
 //   const res = await fetch(`http://localhost:1337/articles?slug=${query.id}`);
-  const res = await fetch(`https://backend-blog-mathis.herokuapp.com/articles?slug=${query.id}`);
+  const res = await fetch(`https://backend-blog-mathis.herokuapp.com/articles?slug=${router.query.id}`);
   const json = await res.json();
   return { articles: json };
 };
