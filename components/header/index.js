@@ -6,7 +6,7 @@ const Header = props => {
   return (
     <header>
       <h1 className="mainTitle">
-        <Link href="/">
+        <Link href="/" as="/">
           <a>Gluten Tag</a>
         </Link>
       </h1>

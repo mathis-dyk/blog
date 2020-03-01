@@ -8,7 +8,7 @@ const Articles = ({ articles }) => {
         .slice(0)
         .reverse()
         .map(article => (
-          <TitleArticle key={article.name} data={article} />
+          <TitleArticle key={article.slug} data={article} />
         ))}
     </section>
   );
