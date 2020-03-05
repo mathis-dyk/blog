@@ -10,6 +10,7 @@ import Footer from "../components/footer";
 import { numberToMonth, numberToSemaine } from "../tools";
 import Link from 'next/link'
 import fetch from "isomorphic-unfetch";
+import CONFIG from '../config/config'
 
 const Article = props => {
     if (props.articles && props.articles[0]) {
@@ -73,7 +74,7 @@ const Article = props => {
 
 Article.getInitialProps = async function(context) {
     const { id } = context.query;
-    const res = await fetch(`${process.env.API_URL}/articles?slug=${id}`);
+    const res = await fetch(`${CONFIG.API_URL}?slug=${id}`);
     const json = await res.json();
     return { articles: json };
 };

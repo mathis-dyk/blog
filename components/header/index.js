@@ -13,7 +13,7 @@ const Header = props => {
 
       <ul>
         <li>
-            {(props.actual == "about") ? <Link href="/" name="Retour à l'accueil"><a>Blog</a></Link> : <Link href="/about" name="Visiter la page About"><a>About</a></Link>}
+            {(props.actual == "about") ? <Link href="/"><a name="Retour à l'accueil">Blog</a></Link> : <Link href="/about"><a name="Visiter la page About">About</a></Link>}
         </li>
       </ul>
     </header>
