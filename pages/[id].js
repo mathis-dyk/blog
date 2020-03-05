@@ -13,8 +13,9 @@ import fetch from "isomorphic-unfetch";
 import CONFIG from '../config/config'
 
 const Article = props => {
-    if (props.articles && props.articles[props.id]) {
-        let article = props.articles[props.id]
+    console.log(props)
+    if (props.articles && props.articles[0]) {
+        let article = props.articles[0]
         var conv = new showdown.Converter();
         var html = conv.makeHtml(article.content);
         let keyWords;
