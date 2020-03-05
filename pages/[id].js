@@ -73,7 +73,7 @@ const Article = props => {
 
 Article.getInitialProps = async function(context) {
     const { id } = context.query;
-    const res = await fetch(`https://backend-blog-mathis.herokuapp.com/articles?slug=${id}`);
+    const res = await fetch(`${process.env.API_URL}/articles?slug=${id}`);
     const json = await res.json();
     return { articles: json };
 };
