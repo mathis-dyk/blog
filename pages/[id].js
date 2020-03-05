@@ -13,7 +13,6 @@ import fetch from "isomorphic-unfetch";
 import CONFIG from '../config/config'
 
 const Article = props => {
-    console.log(props)
     if (props.articles && props.articles[0]) {
         let article = props.articles[0]
         var conv = new showdown.Converter();
