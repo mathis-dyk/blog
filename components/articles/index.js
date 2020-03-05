@@ -4,6 +4,7 @@ import TitleArticle from "../titleArticle";
 const Articles = ({ articles }) => {
   return (
     <section className="articles">
+      {console.log(articles)}
       {articles
         .slice(0)
         .reverse()

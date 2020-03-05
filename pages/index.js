@@ -1,6 +1,7 @@
 import React from "react";
 import "../config/reset.scss";
 import "../config/config.scss";
+import CONFIG from '../config/config'
 import "./styles.scss";
 import Header from "../components/header";
 import Footer from "../components/footer";
@@ -27,8 +28,7 @@ const Home = props => {
 };
 
 Home.getInitialProps = async ctx => {
-  // const res = await fetch("http://localhost:1337/articles");
-  const res = await fetch("https://backend-blog-mathis.herokuapp.com/articles");
+  const res = await fetch(CONFIG.API_URL);
   const json = await res.json();
   return { articles: json };
 };

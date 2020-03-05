@@ -12,9 +12,7 @@ const Footer = () => {
           target="_blank"
           rel="noopener">
           Velvetyne
-        </a> 
-        & 
-        <a
+        </a>&nbsp;&&nbsp;<a
           href="https://gumroad.com/l/OpenDyslexic"
           name="Aller voir le site officiel d'une font facile à lire pour les dyslexiques"
           target="_blank"
