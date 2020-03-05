@@ -28,7 +28,7 @@ const Home = props => {
 };
 
 Home.getInitialProps = async ctx => {
-  const res = await fetch(CONFIG.API_URL + "/articles");
+  const res = await fetch(CONFIG.API_URL);
   const json = await res.json();
   return { articles: json };
 };

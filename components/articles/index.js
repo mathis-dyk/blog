@@ -4,9 +4,7 @@ import TitleArticle from "../titleArticle";
 const Articles = ({ articles }) => {
   return (
     <section className="articles">
-      {console.log(articles)}
-      {articles
-        .slice(0)
+      {articles && Array.prototype.slice.call(articles)
         .reverse()
         .map(article => (
           <TitleArticle key={article.slug} data={article} />
