@@ -5,14 +5,13 @@ const Footer = () => {
   return (
     <footer>
       <p>
-        2020 - Mathis DYK, Fonts by 
-        <a
+        2020 - Mathis DYK, Fonts by <a
           href="http://velvetyne.fr/"
           name="Visiter Velvetyne, un site engagé avec des fonts libres"
           target="_blank"
           rel="noopener">
           Velvetyne
-        </a>&nbsp;&&nbsp;<a
+        </a> & <a
           href="https://gumroad.com/l/OpenDyslexic"
           name="Aller voir le site officiel d'une font facile à lire pour les dyslexiques"
           target="_blank"
