@@ -10,7 +10,7 @@ const PresentationBlock = props => {
         <div className="infos">
           <h2>Mathis DYK</h2>
           <div className="socials">
-            <a name="Visiter mon Twitter" href="https://twitter.com/MDBdev">
+            <a name="Visiter mon Twitter" aria-label="Visiter mon Twitter" href="https://twitter.com/MDBdev">
               <svg
                 version="1.1"
                 id="Capa_1"
@@ -34,7 +34,7 @@ const PresentationBlock = props => {
                 </g>
               </svg>
             </a>
-            <a name="Aller sur mon Instagram" href="https://www.instagram.com/nopain_nogluten/">
+            <a name="Aller sur mon Instagram" aria-label="Aller sur mon Instagram" href="https://www.instagram.com/nopain_nogluten/">
               <svg
                 version="1.1"
                 id="Capa_1"
@@ -66,7 +66,7 @@ const PresentationBlock = props => {
                 </g>
               </svg>
             </a>
-            <a name="Se connecter sur LinkedIn" href="https://www.linkedin.com/in/mathis-dyk/">
+            <a name="Se connecter sur LinkedIn" aria-label="Se connecter sur LinkedIn" href="https://www.linkedin.com/in/mathis-dyk/">
               <svg
                 version="1.1"
                 id="Capa_1"

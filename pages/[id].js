@@ -52,7 +52,7 @@ const Article = props => {
         return (
             <main className="small_container article">
             <Head>
-                <title dangerouslySetInnerHTML={{ __html: "dab" }} />
+                <title dangerouslySetInnerHTML={{ __html: "Erreur 404 - Gluten Tag"}} />
                 <meta name="viewport" content="initial-scale=1.0, width=device-width" />
                 <meta name="description" content="" />
                 <meta name="keywords" content="" />
@@ -62,7 +62,7 @@ const Article = props => {
                     <h1>404</h1>
                     <p>Il semblerait que cette page n'existe pas !</p>
                     <Link href="/">
-                        <a name="Retour à l'accueil">Retour à l'accueil</a>
+                        <a name="Retour à l'accueil" aria-label="Retour à l'accueil">Retour à l'accueil</a>
                     </Link>
                 </div>
             <Footer />

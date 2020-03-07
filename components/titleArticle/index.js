@@ -11,7 +11,7 @@ const TitleArticle = ({
     <section className="titleArticle">
       <h3>
         <Link href={`/[id]`} as={`/${slug}`}>
-          <a name="Lire l'article" dangerouslySetInnerHTML={{ __html: title }} />
+          <a name="Lire l'article" aria-label="Lire l'article" dangerouslySetInnerHTML={{ __html: title }} />
         </Link>
       </h3>
       <div className="infos">
