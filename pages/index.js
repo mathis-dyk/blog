@@ -14,7 +14,7 @@ const Home = props => {
   return (
     <>
       <Head>
-        <title>Gluten Tag - Blog personnel de Mathis DYK</title>
+        <title>Gluten Tag - Blog de Mathis DYK</title>
         <meta name="description" content="Blog de Mathis DYK, destiné à parler de développement Web, de mon apprentissage, et de tout ce qui me passe par la tête" />
       </Head>
       <main className="small_container">
