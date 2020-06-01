@@ -9,6 +9,7 @@ import Articles from "../components/articles";
 import Head from 'next/head'
 import PresentationBlock from "../components/presentationBlock";
 import fetch from "isomorphic-unfetch";
+import BlackLivesMatter from '../components/BlackLivesMatter'
 
 const Home = props => {
   return (
@@ -18,10 +19,11 @@ const Home = props => {
         <meta name="description" content="Blog de Mathis DYK, destiné à parler de développement Web, de mon apprentissage, et de tout ce qui me passe par la tête" />
       </Head>
       <main className="small_container">
-        <Header actual="blog" />
+        {/* <Header actual="blog" />
         <PresentationBlock />
         <Articles articles={props.articles} />
-        <Footer />
+        <Footer /> */}
+        <BlackLivesMatter />
       </main>
     </>
   );

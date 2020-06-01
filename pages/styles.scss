@@ -59,3 +59,23 @@ article {
         }
     }
 }
+
+.BlackLivesMatter {
+    font-size: 18px;
+    margin-top: 30px;
+
+    h1 {
+        color: $red;
+    }
+
+    p,
+    a {
+        line-height: 36px;
+        color: $white;
+        font-size: 18px;
+    }
+
+    b {
+        color: $red;
+    }
+}
