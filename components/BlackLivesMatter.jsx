@@ -28,11 +28,11 @@ const BlackLivesMatter = () => {
         . <b>Use your privileges.</b>
       </p>
       <p>
-        White peoples reading this and wanting to educate and fight,
+        White peoples who are reading this and wants to educate and fight, 
         <a href="https://twitter.com/womenwhodostuff" alt="">
           Women who do stuff
         </a>{" "}
-        group did regroup many ressources in fresh at this
+        group did regroup many ressources in french at this 
         <a
           href="https://docs.google.com/document/d/1rZX6ovsbv90eId_EVUxynq-KDNqLE9iiZJuBKxCrsrQ/preview?pru=AAABcpXYe1Y*SALEUR-cTqfEFN0ydkWl-g"
           alt=""
